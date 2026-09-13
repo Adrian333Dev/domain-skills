@@ -65,17 +65,9 @@ A line starting with `!` and a command in backticks runs when the skill loads, a
 
 ## A page
 
-A page covers one subject, in `references/`. It opens with the same 3 fields every time:
+A page covers one subject, in `references/`. It has no header.
 
-```yaml
----
-subject: React 19 hooks
-date: 2026-09-13
-proved-by: the React 19 upgrade guide, https://react.dev/blog/2024/04/25/react-19-upgrade-guide
----
-```
-
-`proved-by` is a sentence saying what showed the page to be true, with a link. Never write a path from your own machine there.
+**Put a link beside each claim**, to the source that shows it is true, such as the [React 19 upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide). Never link a path from your own machine.
 
 **Knowledge kept per item goes in a sub-folder named for the kind of item.** For example, `web-pages` keeps one page per website in `references/sites/`, such as `references/sites/youtube-watch.md`. Every page in that sub-folder has the same sections, and `SKILL.md` names those sections once.
 
@@ -88,21 +80,18 @@ It opens with this header:
 ```yaml
 ---
 skill: react
-date: 2026-09-13
-proved-by: ticket t045, a Next 15 app on Node 22
 ---
 ```
 
-Below the header, say what happened, what fixed it, and the rule that follows.
+Below the header, say what went wrong, what fixed it, and the rule that follows.
 
-**The maintainer merges findings into the skill.** Merging rewrites the body or a page so it carries the fact, then deletes the finding. A finding is merged only when all 6 of these hold:
+**The maintainer merges findings into the skill.** Merging rewrites the body or a page so it carries the fact, then deletes the finding. A finding is merged only when all 5 of these hold:
 
 1. **True for anyone** using the subject, not only for one project
-2. **Proved**: the header says what proved it
+2. **Proved by a failure**: the finding says what went wrong and what fixed it
 3. **New, or a correction** of something the skill already says
 4. **Versioned**: it names the version it holds for, such as React 19.1, not React
 5. **Fits the size budget**: `SKILL.md` stays near 150 lines
-6. **Written from a failure**: something went wrong without it
 
 A finding that fails one of them is deleted, and the commit deleting it names the rule it failed.
 
