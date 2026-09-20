@@ -15,7 +15,7 @@ Nothing here blocks Flow's first release.
 
 ### The contribution pipeline
 
-- [ ] **The pipeline's second half**: the CI checks on pull requests here, and `/distill`. CI waits for the first contributor other than the user, and `/distill` for the first distill done by hand on the abuse-prevention case. `flow contribute` was built 2026-09-15. Later still: a drift agent and skill evals. Flow's `lab/context/skills.md`
+- [ ] **The pipeline's second half**: the CI checks on pull requests here, and Flow's `/flow:write-skill`. CI waits for the first contributor other than the user, and `/flow:write-skill` for a first run done by hand on the abuse-prevention case. `flow contribute` was built 2026-09-15. Later still: a drift agent and skill evals. Flow's `lab/context/skills.md`
 - [ ] **A Flow command that sends a page or a skill here**: today it is an ordinary pull request, by the steps in `CONTRIBUTING.md`. Waits for the first contributed page to show the manual steps hurt. **parked**
 
 ### The skill shape
