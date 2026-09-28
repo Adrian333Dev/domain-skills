@@ -46,5 +46,3 @@ both modes are a collaborative loop: I write, you run, you paste back, I read.
 - [`knowledge/investigation-patterns.md`](knowledge/investigation-patterns.md):
   how to attack each investigation type, the standing blind spots, and what to do
   when you're stuck.
-
-!`flow overlays web-pages`

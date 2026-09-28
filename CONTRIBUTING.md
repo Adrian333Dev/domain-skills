@@ -56,14 +56,6 @@ description: <what the skill covers>
 
 **A skill that needs another skill names it in one sentence**: "Browser steps use the `playwright-cli` skill. If it is not installed, install it before continuing." Nothing installs dependencies automatically.
 
-**The last line of the body is always this**, with the skill's own name:
-
-```
-!`flow overlays react 2>/dev/null || true`
-```
-
-A line starting with `!` and a command in backticks runs when the skill loads, and its output is pasted into the skill. On a machine running Flow, this line adds a project's own notes about the skill. Everywhere else it prints nothing.
-
 ## A page
 
 A page covers one subject, in `references/`. It has no header.
